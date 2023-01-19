@@ -8,7 +8,7 @@ const Notes=[
     {
         id:2,
         title:"Loops",
-        content:"Q: How to keep a programmer in the shower forever? A:Show him the shammpoo bottle instructions: Apply,Rinse,Repeat."
+        content:"Q: How to keep a programmer in the shower forever? A:Show him the shampoo bottle instructions: Apply,Rinse,Repeat."
 
     },
 
@@ -21,7 +21,12 @@ const Notes=[
     {
         id:4,
         title:"Hardware vs Software",
-        content:"What's is the difference between hardware & software? A: You can hit your hardware with hammer,but you can only surse at your software"
+        content:"Q:What's is the difference between hardware & software? A: You can hit your hardware with hammer,but you can only surse at your software"
+    },
+    {
+        id:5,
+        title:"Big Idea",
+        content:"Eat Briyani at Sultan's Dine"
     }
 ];
 
