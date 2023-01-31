@@ -3,7 +3,7 @@ import Header from './Header';
 //import Note from './Note';
 import Footer from './Footer';
 //import Notes from "../Notes";
-import { useState } from "react";
+// import { useState } from "react";
 import InputArea from "./InputArea"
 
 function App(){
@@ -14,7 +14,7 @@ function App(){
         <div>
         <Header/>
         <InputArea
-        
+    
         />
 
         {/* {
