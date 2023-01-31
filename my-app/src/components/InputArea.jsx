@@ -25,6 +25,7 @@ console.log(value);
   function submittedNote(event){
     props.onAdd(note);
       event.preventDefault();
+      
   }
   
     return(
