@@ -17,13 +17,25 @@ function App(){
         })
     }
 
+    function deleteNote(id){
+        console.log("Delete was triggerd");
+        // setNotes(prevNotes=>{
+        //     return prevNotes.filter(
+        //         (notes,index)=>
+        //         {
+        //             return index!== id;
+        //         }
+        //     )
+        // });
+    }
+
     return(
         <div>
         <Header/>
         <InputArea onAdd={addNote}/>
 
         {notes.map( noteItem=> {
-        return <Note title={noteItem.title} content={noteItem.content}/>
+        return <Note title={noteItem.title} content={noteItem.content}  onDelete={deleteNote}/>
         })}
         
         <Footer/>
