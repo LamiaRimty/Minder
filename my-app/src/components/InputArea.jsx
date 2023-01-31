@@ -21,9 +21,14 @@ console.log(value);
     [name]:value
    };
  });
+
 }
   function submittedNote(event){
     props.onAdd(note);
+    setNote({
+        title:"",
+        content:""
+    });
       event.preventDefault();
       
   }
