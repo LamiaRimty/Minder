@@ -1,10 +1,10 @@
 import React from "react";
 import Header from './Header';
-//import Note from './Note';
+import Note from './Note';
 import Footer from './Footer';
 //import Notes from "../Notes";
-// import { useState } from "react";
 import InputArea from "./InputArea"
+import { useState } from "react";
 
 function App(){
 
@@ -14,17 +14,17 @@ function App(){
         <div>
         <Header/>
         <InputArea
-    
+          onAdd={addNote}
         />
 
-        {/* {
-        Notes.map(newNote=>
+       
+        {/* Notes.map(newNote=>  */}
             <Note
-            key={newNote.id}
-            title={newNote.title}
-            content={newNote.content}
+            key={1}
+            title="Note.title"
+            content="Note content"
             />
-        )} */}
+        
         <Footer/>
         </div>
     );

@@ -54,8 +54,8 @@ header h1{
 }
 
 form{
-    /* background-color: navajowhite; */
-    background-color: white;
+    background-color: navajowhite;
+    /* background-color: white; */
     border-radius: 7px;
     box-shadow: 0 2px 5px 0 gainsboro; 
     /* #ccc */
