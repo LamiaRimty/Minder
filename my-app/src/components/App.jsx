@@ -33,7 +33,7 @@ function App(){
         <Header/>
         <InputArea onAdd={addNote}/>
 
-        {notes.map( noteItem=> {
+        {notes.map( (noteItem,index )=> {
         return <Note title={noteItem.title} content={noteItem.content} key={index} id={index} onDelete={deleteNote}/>
         })}
         
