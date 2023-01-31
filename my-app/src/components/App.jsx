@@ -8,7 +8,14 @@ import { useState } from "react";
 
 function App(){
 
+    const [notes,setNotes]=useState([]);
 
+    function addNote(newNote){  //noteNew passed over frm inputArea pros.on
+        //console.log(note);
+        setNotes(prevNotes=>{
+            return  [...prevNotes,newNote];
+        })
+    }
 
     return(
         <div>
