@@ -5,6 +5,7 @@ import { Fab } from "@material-ui/core";
 import Zoom from '@material-ui/core/Zoom';
 
 function InputArea(props){
+  const [isExpand,setExpand]=useState(false);
 
     const [note,setNote]=useState({
         title:"",
@@ -36,13 +37,25 @@ console.log(value);
       
   }
   
+  function expand(){
+    setExpand(true);
+  }
     return(
         <div> 
          <form>
-        <input onChange={handleChange}  placeholder="Title" name="title" value={note.title}></input>
-        <textarea onChange={handleChange}  placeholder="Take a note..." name="content" value={note.content} rows="3"></textarea>
+          { isExpand && ( 
+             <input onChange={handleChange}  placeholder="Title" name="title" value={note.title}></input>
+        )}
+      <textarea onClick={expand} 
+                 onChange={handleChange}  
+                 placeholder="Take a note..." 
+                 name="content" 
+                 value={note.content}
+                 row={ isExpand? 3 : 1}
+       />
+
        <Zoom in="true">
-       <Fab onClick={submittedNote}><AddCircleIcon/> </Fab>
+       <Fab onClick={submittedNote}><AddCircleIcon/></Fab>
        </Zoom>
        </form>
         </div> 
