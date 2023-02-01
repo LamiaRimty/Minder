@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import { Fab } from "@material-ui/core";
+import Zoom from '@material-ui/core/Zoom';
 
 function InputArea(props){
 
@@ -36,11 +37,13 @@ console.log(value);
   }
   
     return(
-        <div>
+        <div> 
          <form>
         <input onChange={handleChange}  placeholder="Title" name="title" value={note.title}></input>
         <textarea onChange={handleChange}  placeholder="Take a note..." name="content" value={note.content} rows="3"></textarea>
-        <Fab onClick={submittedNote}><AddCircleIcon/> </Fab>
+       <Zoom in="true">
+       <Fab onClick={submittedNote}><AddCircleIcon/> </Fab>
+       </Zoom>
        </form>
         </div> 
     );
