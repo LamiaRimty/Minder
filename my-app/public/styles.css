@@ -14,13 +14,15 @@ body{
 }
 
 .header{
-    background-color: #f5ba13;
+    /* background-color: #f5ba13; */
+    background-color: chocolate;
+    color: beige;
     margin: auto -16px;
     padding: 16px 32px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0,0.3);
 }
 
-header h1{
+.header h1{
     color: sienna;
     font-family: 'El Messiri', sans-serif;
     font-weight: 200;
@@ -38,7 +40,8 @@ header h1{
 
 
 .note{
-    background: navajowhite;
+    /* background: navajowhite; */
+    background-color:white;
     border-radius: 7px;
     box-shadow: 0 2px 5px 0 gainsboro; 
     /* #ccc */
@@ -55,15 +58,16 @@ header h1{
 
 form{
     background-color: navajowhite;
-    /* background-color: white; */
     border-radius: 7px;
     box-shadow: 0 2px 5px 0 gainsboro; 
-    /* #ccc */
-    padding: 10px;
-    width: 240px;
-    margin: 16px;
-    float: left;
-}
+    width: 480px;
+    margin: 30px;
+    position: relative;
+    margin: 30px auto 20px auto;
+    padding: 15px;
+
+} 
+
 .note p{
     font-size: 1.1em;
     margin-bottom: 10px;
@@ -72,3 +76,17 @@ form{
 
 }
 
+.note button{
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+}
+
+form input,textarea{
+    width: 100%;
+}

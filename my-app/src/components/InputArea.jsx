@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
+
 function InputArea(props){
 
     const [note,setNote]=useState({
@@ -38,9 +39,9 @@ console.log(value);
          <form>
         <input onChange={handleChange}  placeholder="Title" name="title" value={note.title}></input>
         <textarea onChange={handleChange}  placeholder="Take a note..." name="content" value={note.content} rows="3"></textarea>
-        <button type="submit" onClick={submittedNote}>Add+</button>
+        <Fab onClick={submittedNote}><AddCircleIcon/> </Fab>
        </form>
-        </div>
+        </div> 
     );
 }
 
