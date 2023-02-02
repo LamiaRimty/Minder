@@ -11,7 +11,7 @@ function Note(props){
 
               <h1>{props.title}</h1>
                <p>{props.content}</p>
-               <button type="submit" onClick={handleClick}> <DeleteIcon/></button>
+               <button type="submit" onClick={handleClick} style={{ color: "#674188" }}> <DeleteIcon/></button>
         </div>
       
     );

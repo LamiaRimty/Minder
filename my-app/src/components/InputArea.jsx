@@ -55,7 +55,7 @@ console.log(value);
        />
 
        <Zoom in="true">
-       <Fab onClick={submittedNote}><AddCircleIcon/></Fab>
+       <Fab onClick={submittedNote} style={{ color: "#674188" }}><AddCircleIcon /></Fab>
        </Zoom>
        </form>
         </div> 
